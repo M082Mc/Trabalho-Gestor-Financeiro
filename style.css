@@ -1,59 +1,196 @@
-
-.forms{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    margin: 0 auto;
-    background-color: #bbb9b9; ;
-    margin-top: 10%;
-}
 .nav{
-    background-color: #ffffff;
+    background-color: #032d80;
     padding: 10px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 5vh;
+    height: 8vh;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: white;
 }
-/*.container-principal{
-    background-color: #e3e1e1;
-    height: 100vh;
-    width: 80vw;
-    display:flex;
-    justify-content: center;
+.nav a {
+    margin-top: 1%;
+    color: white; 
+    text-decoration: none; /* Remove o sublinhado padrão do link */
+    padding: 8px 15px; /* Adiciona padding para parecer um botão */
+    border: 1px solid white; /* Adiciona uma borda fina branca */
+    border-radius: 5px; /* Arredonda os cantos */
+    transition: background-color 0.3s, color 0.3s; /* Suaviza a transição de cores ao passar o mouse */
+    font-weight: bold;
+    margin-bottom: 2%;
+}
+.nav a:hover {
+    background-color: white; 
+    color: #032d80; 
+}
+
+.button2{
+    background-color: #00b922;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin-top: 10px;
     align-items: center;
+   
 }
-.container-receita{
-    margin-bottom: 20px;
-    background-color: rgb(255, 255, 255) ;
-    margin-right: 70%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin-top: 5%;
-    border-radius:10px;
-    max-width:20%;
-    margin-left: 7%;
+.button2:hover {
+    background-color: #016912;
+}
+
+.container-formulario{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+    gap: 20px;
+    padding: 0 40px;
+    
+}
+.receita{
+    background-color: white; 
+    border: 1px solid #ddd; /* Borda fina e cinza */
+    border-radius: 10px; /* Cantos arredondados */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 30%;
+    margin-top: 10%;
+    heght:100%;
+    
+} 
+.despesas{
+    background-color: white; 
+    border: 1px solid #ddd; /* Borda fina e cinza */
+    border-radius: 10px; /* Cantos arredondados */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 30%;
+    margin-top: 10%;
+    margin-left: 2%;
+    heght:100%;
+}
+.entrada{
+    background-color: white; 
+    border: 1px solid #ddd; /* Borda fina e cinza */
+    border-radius: 10px; /* Cantos arredondados */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 30%;
+    margin-top: 10%;
+    margin-left: 2%;
+    heght:100%;
+}
+.saida{
+    background-color: white; 
+    border: 1px solid #ddd; /* Borda fina e cinza */
+    border-radius: 10px; /* Cantos arredondados */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 30%;
+    margin-top: 10%;
+    margin-left: 2%;
+    heght:100%;
 }
 .container-saldo{
-    
-    margin-right: 70%;
-    margin-top: 10%;
-    background-color: rgb(255, 255, 255) ;
-    width: 30%;
-    height: 30%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
-    padding: 5%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #000000;
-    border-radius: 30px;
-} */
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 5% ;
+    border: 2px solid #7b7b7c;
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+.table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 30px auto;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 10%;
+}
+.table th, .table td {
+    border: 1px solid #757575;
+    padding: 12px;
+    text-align: left;
+    
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.footer{
+    background-color: #032d80;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+input[type="number"], input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
 
 
+@media (max-width: 768px) {
 
+    /* --- Container do Formulário (.container-formulario) --- */
+    .container-formulario {
+        flex-direction: column; /* Caixas se empilham verticalmente */
+        align-items: center; 
+        padding: 0 10px; /* Reduz o padding lateral para maximizar o espaço */
+        margin-top: 15px;
+    }
 
-   
+    /* --- Caixas de Formulário (Empilhamento) --- */
+    .receita, .despesas, .entrada, .saida {
+        flex-basis: auto; /* Deixa o browser decidir */
+        width: 100%;
+        max-width: 95%; /* Ocupa quase a largura total da tela */
+        margin: 10px 0; /* Espaçamento entre as caixas empilhadas */
+    }
 
+    /* --- Navegação (.nav) --- */
+    .nav {
+        /* Se houver muitos links, pode ser necessário mudar para flex-wrap: wrap */
+        flex-wrap: wrap; 
+        justify-content: center; /* Centraliza os itens */
+    }
+    .nav a {
+        /* Reduz o padding e a margem dos links para caberem */
+        padding: 6px 10px;
+        margin: 5px; 
+        font-size: 0.9em;
+    }
+
+    /* --- Saldo e Tabela --- */
+    .container-saldo {
+        font-size: 20px;
+        max-width: 95%; 
+        margin-top: 20px;
+    }
+    .table {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    /* --- Células da Tabela (Melhora o uso do espaço em telas pequenas) --- */
+    .table th, .table td {
+        padding: 8px;
+        font-size: 0.9em;
+    }
+
+    /* --- Rodapé --- */
+    .footer {
+        padding: 10px 0;
+        font-size: 0.9em;
+    }
+}

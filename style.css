@@ -1,0 +1,59 @@
+
+.forms{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+    background-color: #bbb9b9; ;
+    margin-top: 10%;
+}
+.nav{
+    background-color: #ffffff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 5vh;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+/*.container-principal{
+    background-color: #e3e1e1;
+    height: 100vh;
+    width: 80vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-receita{
+    margin-bottom: 20px;
+    background-color: rgb(255, 255, 255) ;
+    margin-right: 70%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 5%;
+    border-radius:10px;
+    max-width:20%;
+    margin-left: 7%;
+}
+.container-saldo{
+    
+    margin-right: 70%;
+    margin-top: 10%;
+    background-color: rgb(255, 255, 255) ;
+    width: 30%;
+    height: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    border-radius: 30px;
+} */
+
+
+
+
+   
+

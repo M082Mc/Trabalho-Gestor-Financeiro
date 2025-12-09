@@ -26,6 +26,12 @@ CSS3: Estilização e design visual.
 
 JavaScript : Lógica e funcionalidade da aplicação.
 
+A Lógica por trás do codigo cria um ambiente que salva informações no localstorage, ligando botões a funções JS, levando informações dos inputs para memória do computador, aplicando calculos matemáticos e dando respostas exatas, se mantendo salvos até um comando de clear. 
+
+As funçõçes JS captam valores, transformam, testam e salvam a respota. Guardando o valor das variáveis como Strings de texto ou numeros, diferenciando cada etapa. 
+
+Apesar do projeto ser simples, suas caracteristicas foram autorais e testadas linha por linha. 
+
 📝 Versão
 Versão: 1.0
 

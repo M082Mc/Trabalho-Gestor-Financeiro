@@ -1,0 +1,192 @@
+
+
+
+body {
+    padding-top: 60px; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa; 
+    color: #343a40; 
+}
+
+
+header {
+    background-color: #ffffff; 
+    border-bottom: 1px solid #dee2e6;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 20px;
+}
+
+.nav a {
+    color: #007bff; 
+    text-decoration: none;
+    padding: 10px 15px;
+    margin-left: 10px;
+    border-radius: 4px;
+    transition: background-color 0.2s, color 0.2s;
+    font-weight: 500;
+}
+
+.nav a:hover {
+    background-color: #e9ecef; 
+    color: #0056b3;
+}
+
+
+.forms {
+    padding: 20px;
+}
+
+.container-formulario {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.receita, .despesas, .entrada, .saida {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+    flex: 1 1 280px; 
+    border-left: 5px solid; 
+}
+
+
+.receita { border-left-color: #17a2b8;  }
+.despesas { border-left-color: #dc3545; }
+.entrada { border-left-color: #28a745; }
+.saida { border-left-color: #ffc107; }
+
+h1 {
+    font-size: 1.4rem;
+    margin-bottom: 18px;
+    padding-bottom: 5px;
+    border-bottom: 1px dashed #e9ecef;
+    color: #343a40;
+    font-weight: 600;
+}
+
+input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    box-sizing: border-box;
+    transition: border-color 0.2s;
+}
+
+input[type="text"]:focus, input[type="number"]:focus {
+    border-color: #007bff; 
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    outline: none;
+}
+
+/* --- Botões --- */
+.button2 {
+    background-color: #007bff; 
+    color: white;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: 600;
+    transition: background-color 0.2s, transform 0.1s;
+    text-transform: uppercase;
+}
+
+.button2:hover {
+    background-color: #0056b3;
+    transform: translateY(-1px);
+}
+
+
+.receita .button2 { background-color: #17a2b8; }
+.despesas .button2 { background-color: #dc3545; }
+.entrada .button2 { background-color: #28a745; }
+.saida .button2 { background-color: #ffc107; color: #343a40;}
+
+
+
+.table {
+    width: 90%;
+    margin: 40px auto;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.table thead tr {
+    background-color: #e9ecef; 
+    color: #495057;
+}
+
+.table th, .table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #dee2e6;
+}
+
+
+.table tbody tr:nth-child(even) {
+    background-color: #f8f9fa; 
+}
+
+
+.table-success td { color: #155724; background-color: #d4edda; } /* Entrada - Verde */
+.table-danger td { color: #721c24; background-color: #f8d7da; }  /* Saída - Vermelho */
+
+
+
+.container-saldo {
+    text-align: center;
+    padding: 30px;
+    margin: 30px auto 50px auto;
+    background-color: #ffffff;
+    width: 90%;
+    border-radius: 8px;
+    border: 1px solid #dee2e6;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #343a40;
+}
+
+#saldoAtual {
+    font-size: 2.5rem;
+    font-weight: 700;
+    
+}
+
+
+@media (max-width: 768px) {
+    .container-formulario {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .receita, .despesas, .entrada, .saida {
+        width: 90%;
+        min-width: unset;
+    }
+    
+    .table {
+        width: 95%;
+    }
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <!-- <a href=""><img src="logo.png" alt="Logo" class="logo"></a> -->
+        <style>
+                
+            </style>
+            
+            <a href="">Home</a>
+            <a href="">Relatórios</a>
+            <a href="">Perfil</a>
+        </nav>
+
+    </header>
+
+    <form class="forms">
+        <div class="container-formulario">
+            
+            <div class="receita">
+        <h1>Receita Mensal</h1>
+        <input type="number" placeholder="Receita mensal" id="receita" /><br>
+        <button class="button2" type="button" onclick="salvarReceita()">Adicionar Receita</button>
+            </div>
+            <div class="despesas">  
+            <h1>Despesas Fixas</h1>
+        <!--<input type="text" placeholder="Descrição de despesa fixa" id="inputDespesas" /><br>-->
+        <input type="number" placeholder="Despesas fixas mensais" id="inputFixo"/><br>
+        <button class="button2" onclick="salvarDespesas()" type="button">Adicionar Despesas</button>
+        </div>
+        <div class="entrada">
+        <h1>Entradas </h1>
+        <input type="text" placeholder="Descrição da entrada" id="descEntrada" /><br>
+        <input type="number" placeholder="Valor da entrada" id="inputEntrada" /><br>
+        <button class="button2" onclick="adicionarEntrada()" type="button">Adicionar Entrada</button>
+        </div>
+        <div class="saida">
+        <h1>Saídas</h1>
+        <input type="text" placeholder="Descrição da saída" id="descSaida" /><br>
+        <input type="number" placeholder="Valor da despesa" id="inputSaida" /><br>
+        <button class="button2" onclick="adicionarSaida()" type="button">Adicionar Saída</button><br>
+        </div>
+</div>
+    </form>
+    
+
+
+    <table class="table">
+        <thead>
+            <tr> 
+                <th>Descrição</th>
+                <th>Valor</th> 
+            </tr>
+        </thead>
+        <tbody id="tabelaValores">
+            <tr>
+                <td>Receita Mensal</td>
+                <td id="tableReceita">R$ 0,00</td>
+            </tr>
+            <tr>
+                <td>Despesas Fixas Mensais</td>
+                <td id="tableFixo">R$ 0,00</td>
+            </tr>
+        </tbody>
+        <tbody id="tabelaTransacoes">
+        </tbody>
+    </table>
+    <div class="container-saldo">
+        <h2>Saldo: <span id="saldoAtual">R$ 0,00</span></h2>
+
+    </div>
+
+    <!--<footer class="footer">
+        <p>© 2025 Controle Financeiro</p>
+    </footer> -->
+    <script src="script.js"></script>
+</body>
+
+</html>
